@@ -40,7 +40,11 @@ public class BankAccount {
         }
         if (balance < 1000){
             this.balance -= 25;
+            this.balance -= amount;
+            System.out.printf("Rs %d withdrawn from %s.\n",amount,this.accountNumber);
             System.out.printf("Rs 25 deducted from your account (%s) for low balance\n",this.accountNumber);
+            System.out.printf("The new balance for %s is Rs %d \n",this.accountNumber,this.balance);
+            return;
         }
         this.balance -= amount;
         System.out.printf("Rs %d withdrawn from %s.\n",amount,this.accountNumber);
@@ -61,7 +65,8 @@ public class BankAccount {
     }
 
     public void showNoAccountError(){
-        System.out.println("Please create an account first with a deposit of minimun Rs 1000");
+        System.out.println("Please create an account first with a deposit of minimum Rs 1000");
+        return;
     }
 
 

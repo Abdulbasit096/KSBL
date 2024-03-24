@@ -1,21 +1,41 @@
 package Assignments_and_Quizes.Assignment1;
 
-import java.awt.*;
-
 public class Main {
     public static void main(String[] args) {
-        // Question 2
-        Rectangle rect1 = new Rectangle(new Point(4, 8), new Point(3, 4));
-        System.out.println("RECTANGLE 1");
-        System.out.println("Area: " + rect1.getArea());
-        System.out.println("Perimeter: " + rect1.getPerimeter());
-        System.out.println("Is square? " + rect1.isSquare());
+        //Q4
+        Player player1 = new Player("Abdul Basit");
+        Player player2 = new Player("Maheen Fatima");
 
-        Rectangle rect2 = new Rectangle(new Point(10, 6), new Point(5, 2));
-        System.out.println("\n\nRECTANGLE 2");
-        System.out.println("Area: " + rect2.getArea());
-        System.out.println("Perimeter: " + rect2.getPerimeter());
-        System.out.println("Is square? " + rect2.isSquare());
+        Game game = new Game(player1,player2);
+        System.out.println("\n\n"+game.playGame().toUpperCase());
+        //        Question 3
+//        try{
+//            Distance distance1 = new Distance(4,"feet");
+//            Distance distance2 = new Distance(2,"YARD");
+//            System.out.println(distance1.addDistance(distance2));
+//        } catch (Exception e) {
+//            System.out.println(e.getMessage());
+//        }
+
+
+        // Question 2
+//        Rectangle rect1 = new Rectangle(new Point(-2, 4), new Point(3, -5));
+//        System.out.println("RECTANGLE 1");
+//        System.out.println("Area: " + rect1.getArea());
+//        System.out.println("Perimeter: " + rect1.getPerimeter());
+//        System.out.println("Is square? " + rect1.isSquare());
+//
+//        Rectangle rect2 = new Rectangle(new Point(-10, 6), new Point(5, 2));
+//        System.out.println("\n\nRECTANGLE 2");
+//        System.out.println("Area: " + rect2.getArea());
+//        System.out.println("Perimeter: " + rect2.getPerimeter());
+//        System.out.println("Is square? " + rect2.isSquare());
+//
+//        Rectangle rect3 = new Rectangle(new Point(-2, 2), new Point(-1, 1));
+//        System.out.println("\n\nRECTANGLE 3");
+//        System.out.println("Area: " + rect3.getArea());
+//        System.out.println("Perimeter: " + rect3.getPerimeter());
+//        System.out.println("Is square? " + rect3.isSquare());
 
 
 
