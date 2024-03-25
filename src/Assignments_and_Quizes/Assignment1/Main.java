@@ -3,8 +3,8 @@ package Assignments_and_Quizes.Assignment1;
 public class Main {
     public static void main(String[] args) {
         //Q4
-        Player player1 = new Player("Abdul Basit");
-        Player player2 = new Player("Maheen Fatima");
+        Player player1 = new Player("John");
+        Player player2 = new Player("Cena");
 
         Game game = new Game(player1,player2);
         System.out.println("\n\n"+game.playGame().toUpperCase());
