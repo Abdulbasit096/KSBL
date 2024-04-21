@@ -3,19 +3,19 @@ package Assignments_and_Quizes.Assignment1;
 public class Main {
     public static void main(String[] args) {
         //Q4
-        Player player1 = new Player("John");
-        Player player2 = new Player("Cena");
-
-        Game game = new Game(player1,player2);
-        System.out.println("\n\n"+game.playGame().toUpperCase());
+//        Player player1 = new Player("John");
+//        Player player2 = new Player("Cena");
+//
+//        Game game = new Game(player1,player2);
+//        System.out.println("\n\n"+game.playGame().toUpperCase());
         //        Question 3
-//        try{
-//            Distance distance1 = new Distance(4,"feet");
-//            Distance distance2 = new Distance(2,"YARD");
-//            System.out.println(distance1.addDistance(distance2));
-//        } catch (Exception e) {
-//            System.out.println(e.getMessage());
-//        }
+        try{
+            Distance distance1 = new Distance(4,"feet");
+            Distance distance2 = new Distance(2,"YARD");
+            System.out.println(distance1.addDistance(distance2));
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
 
 
         // Question 2

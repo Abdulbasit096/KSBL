@@ -85,4 +85,11 @@ public class Distance {
         return ((int) (this.getInch() + distance.getInch())) + " inches.";
     }
 
+    private void inchToFeet(){
+            this.feet = this.inch/12;
+    }
+    private void feetToYard(){
+        this.yard = this.feet*3;
+    }
+
 }
